@@ -1,0 +1,199 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Inshorts Web UI</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <style type="text/css">
+        	*{
+			    margin: 0;
+			    padding: 0;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			}
+
+			body{
+			    position: relative;
+			}
+
+			.header{
+				display: flex;
+				flex-wrap: nowrap;
+				position: top;
+				align-items: center;
+				justify-content: space-between;
+				height: 7vh;
+				width: 100vw;
+			}
+
+			.footer-container {
+				position: fixed;
+				width: 100vw;
+				top: 100vh;
+				transform: translateY(-180%);
+			}
+
+			.footer {
+				display: flex;
+				flex-wrap: nowrap;
+				height: 8vh;
+			}
+
+			.footer > button {
+				background-color: white;
+				border: none;
+				border-top: 1px solid lightgrey;
+			    width: 100vw;
+				text-align: center;
+				font-size: 2rem;
+			    color: grey;
+			}
+
+			#discover {
+			    background-color: white;
+			    border: none;
+			    color: black;
+			    padding: 1rem;
+			    font-size: 2rem;
+			    cursor: pointer;
+			    float: left;
+			}
+
+			#my-feed {
+				text-align: center;
+				justify-content: center;
+				transform: translateX(-50%);
+				border-bottom: 0.4rem solid skyblue;
+				padding: 7px 0px;
+				font-size: 3rem;
+			}
+
+			#reload {
+				background-color: white;
+			    border: none;
+			    color: black;
+			    padding: 1rem;
+			    font-size: 3rem;
+			    cursor: pointer;
+				float: right;
+			}
+
+			.card-image {
+				height: 35vh;
+				overflow: hidden;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.card-title {
+				padding: 2vh 2vh 1vh 2vh;
+				font-size: 3rem;
+			}
+
+			.card-text {
+				padding: 1vh 2vh 1vh 2vh;
+				color: grey;
+				line-height: 3rem;
+				font-size: 2.5rem;
+			}
+
+			.author {
+				padding: 1vh 2vh 2vh 2vh;
+				color: lightgrey;
+				font-size: 2rem;
+			}
+
+			.swiper-container {
+				height: 87vh;
+			}
+        </style>
+    </head>
+
+    <body>
+    	<div class="header">
+    		<button id="discover"><i class="fas fa-chevron-left" style="color: skyblue; padding-right: 0.5rem"></i>Discover</button>
+    		<h5 id="my-feed">My Feed</h5>
+    		<button id="reload"><i class="fas fa-redo" style="color: skyblue; background: white; border: none;"></i></button>
+    	</div>
+
+    	<div class="swiper-container">
+    		<div class="swiper-wrapper">
+    			<div class="swiper-slide">
+			    	<div class="card">
+			    		<div class="card-image">
+			    			<img src="./imgs/image1.jpeg" style="min-width: 100%; min-height: 100%" alt="Image">
+			    		</div>
+			    	</div>
+
+		    		<div class="card-body">
+			    		<h3 class="card-title">Viral image shows scale of melting ice in Greenland</h3>
+		    			<p class="card-text">A photo showing sled dogs wading through water ankle-deep on top of a melting ice sheet in Greenland has gone viral. The picture taken by Steffen Olsen from the Centre for Ocean and Ice at the Danish Meteorological Institute shows the scale of melting ice in Greenland. Olsen said the ice sheet beneath the water was 1.2 metres thick.</p>
+		    			<p class="author"><small>short by Ankush Verma</small></p>
+		    		</div>
+		    	</div>
+
+		    	<div class="swiper-slide">
+			    	<div class="card">
+			    		<div class="card-image">
+			    			<img src="imgs/image1.jpeg" style="min-width: 100%; min-height: 100%" alt="Image">
+			    		</div>
+			    	</div>
+
+		    		<div class="card-body">
+			    		<h3 class="card-title">Viral image shows scale of melting ice in Greenland</h3>
+		    			<p class="card-text">A photo showing sled dogs wading through water ankle-deep on top of a melting ice sheet in Greenland has gone viral. The picture taken by Steffen Olsen from the Centre for Ocean and Ice at the Danish Meteorological Institute shows the scale of melting ice in Greenland. Olsen said the ice sheet beneath the water was 1.2 metres thick.</p>
+		    			<p class="author"><small>short by Ankush Verma</small></p>
+		    		</div>
+		    	</div>
+
+		    	<div class="swiper-slide">
+			    	<div class="card">
+			    		<div class="card-image">
+			    			<img src="imgs/image1.jpeg" style="min-width: 100%; min-height: 100%" alt="Image">
+			    		</div>
+			    	</div>
+
+		    		<div class="card-body">
+			    		<h3 class="card-title">Viral image shows scale of melting ice in Greenland</h3>
+		    			<p class="card-text">A photo showing sled dogs wading through water ankle-deep on top of a melting ice sheet in Greenland has gone viral. The picture taken by Steffen Olsen from the Centre for Ocean and Ice at the Danish Meteorological Institute shows the scale of melting ice in Greenland. Olsen said the ice sheet beneath the water was 1.2 metres thick.</p>
+		    			<p class="author"><small>short by Ankush Verma</small></p>
+		    		</div>
+		    	</div>
+
+		    	<div class="swiper-slide">
+			    	<div class="card">
+			    		<div class="card-image">
+			    			<img src="imgs/image1.jpeg" style="min-width: 100%; min-height: 100%" alt="Image">
+			    		</div>
+			    	</div>
+
+		    		<div class="card-body">
+			    		<h3 class="card-title">Viral image shows scale of melting ice in Greenland</h3>
+		    			<p class="card-text">A photo showing sled dogs wading through water ankle-deep on top of a melting ice sheet in Greenland has gone viral. The picture taken by Steffen Olsen from the Centre for Ocean and Ice at the Danish Meteorological Institute shows the scale of melting ice in Greenland. Olsen said the ice sheet beneath the water was 1.2 metres thick.</p>
+		    			<p class="author"><small>short by Ankush Verma</small></p>
+		    		</div>
+		    	</div>
+		    </div>
+    	</div>
+
+    	<div class="footer-container">
+	   		<div class="footer">
+	  			<button id="relevance"><i class="fas fa-circle" style="display: inherit; padding-bottom: 5px; font-size: 3rem; color: lightgreen"></i>Relevance</button>
+	   			<button id="share"><i class="fas fa-share-alt" style="display: inherit; padding-bottom: 5px; font-size: 3rem; color: skyblue"></i>Share</button>
+	    		<button id="bookmark"><i class="far fa-bookmark" style="display: inherit; padding-bottom: 5px; font-size: 3rem; color: skyblue"></i>Bookmark</button>
+	    	</div>
+	    </div>
+	    
+	    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+			})
+		</script>
+
+    </body>
